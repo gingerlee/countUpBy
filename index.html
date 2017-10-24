@@ -4,39 +4,36 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/custom.css" type="text/css">
-    <script src="js/jquery-3.2.1.js" charset="utf-8"></script>
-    <script src="js/scripts.js" charset="utf-8"></script>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
     <title>Count Up By Tool</title>
   </head>
   <body>
     <div class="container">
-
-      <div class="card col-md">
-        <img class="card-img-top" src="#.jpg" alt="">
-        <div class="card-body">
+        <div class="jumbotron">
           <h4 class="card-title">Let's count because it's fun!</h4>
         </div>
-      </div>
+
 
       <form id="count">
         <div class="form-group">
-          <label class="col-form-label col-md" for="counting">Enter a number to start counting from:</label>
-          <input type="text" class="form-control" id="countFrom">
+          <label class="col-form-label col-md" for="countTo">Enter a number to count to:</label>
+          <input type="text" class="form-control" id="countTo">
         </div>
 
         <div class="form-group">
-          <label class="col-form-label col-md" for="counting">What number do you want to count by?</label>
+          <label class="col-form-label col-md" for="countBy">What number do you want to count by?</label>
           <input type="text" class="form-control" id="countBy">
         </div>
 
 
-        <input class="btn btn-primary" type="submit" value="Submit">
+          <button class="btn btn-primary" type="button">Enter</button>
       </form>
 
-      <ul id="theList">
+      <!-- <ul id="theList">
 
-      </ul>
-    </div> <!--main container->
+      </ul> -->
 
+    </div>
   </body>
 </html>

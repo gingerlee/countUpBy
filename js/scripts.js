@@ -1,4 +1,22 @@
-$(function() {
+$(document).ready(function() {
+  $("form#count").submit(function(event) {
+    event.preventDefault();
+    var countTo = $("input#countTo").val();
+    var countBy = $("input#countBy").val();
+
+
+    var output = [];
+    for (var currentNumber = 0; currentNumber <= countTo; currentNumber += countBy) {
+      output.push(currentNumber);
+    }
+    alert("hello");
+
+
+  });
+
+});
+    // $("#theList").
+
 
   //
   // var index = [];
@@ -12,6 +30,3 @@ $(function() {
 // 	output.push(currentNum);
 // }
 // alert(output);
-
-
-});
