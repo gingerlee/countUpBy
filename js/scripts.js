@@ -1,19 +1,23 @@
 $(document).ready(function() {
   $("form#count").submit(function(event) {
     event.preventDefault();
-    var countTo = $("input#countTo").val();
-    var countBy = $("input#countBy").val();
-
-
+    var countTo = parseInt($("input#countTo").val());
+    var countBy = parseInt($("input#countBy").val());
     var output = [];
-    for (var currentNumber = 0; currentNumber <= countTo; currentNumber += countBy) {
+    for (var currentNumber = countBy; currentNumber <= countTo; currentNumber += countBy) {
       output.push(currentNumber);
     }
-    alert("hello");
 
+    if ((Number.isInteger(countTo)) && (Number.isInteger(countBy))) {
+    alert(output);
+
+    } else {
+      $("input#countTo").addClass("is-invalid");
+      $("input#countBy").addClass("is-invalid");
+      $(".invalid-feedback").show();
+    }
 
   });
-
 });
     // $("#theList").
 
